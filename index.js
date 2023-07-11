@@ -1,6 +1,3 @@
-console.log("hell0  world");
-console.log("hell0  world");
-
 ConvertToJson = () => {
   console.log("button is live");
   var tabl = document.getElementById("tableofcontents");
@@ -57,5 +54,5 @@ ConvertTocsv = (filename) => {
   }
 
   console.log(csv);
-  // downloadCSV(csv.join("\n"), filename);
+  downloadCSV(csv.join("\n"), filename);
 };
