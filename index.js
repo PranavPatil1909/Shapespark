@@ -35,6 +35,8 @@ downloadCSV = (csv, filename) => {
   downloadLink.download = filename;
   downloadLink.href = window.URL.createObjectURL(csvfile);
   downloadLink.style.display = "none";
+//   document.appendChild(downloadLink.href);
+
   downloadLink.click();
 };
 
