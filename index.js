@@ -48,7 +48,7 @@ ConvertTocsv = (filename) => {
     //   console.log(cols);
     for (var j = 0; j < cols.length; j++) {
       row.push(cols[j].innerText);
-      //   console.log(cols[j]);
+      
     }
     csv.push(row.join(","));
   }
