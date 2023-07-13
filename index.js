@@ -39,7 +39,7 @@ downloadCSV = (csv, filename) => {
 };
 
 ConvertTocsv = (filename) => {
-  console.log("button is live");
+  // console.log("button is live");
   var csv = [];
   var rows = document.querySelectorAll("table tr");
 
