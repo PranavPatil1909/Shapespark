@@ -1,6 +1,6 @@
 
 ConvertToJson = () => {
-  console.log("button is live");
+  // console.log("button is live");
   var tabl = document.getElementById("tableofcontents");
   console.log(tabl);
   var head = [];
@@ -32,7 +32,7 @@ downloadCSV = (csv, filename) => {
   downloadLink = document.createElement("a");
   downloadLink.download = filename;
   downloadLink.href = window.URL.createObjectURL(csvfile);
-  console.log(downloadLink);
+  // console.log(downloadLink);
   downloadLink.style.display = "none";
     // document.appendChild(downloadLink.href);
   downloadLink.click();
