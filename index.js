@@ -1,6 +1,3 @@
-clickedexport = () => {
-  console.log("js file is linked");
-};
 
 ConvertToJson = () => {
   console.log("button is live");
@@ -21,11 +18,11 @@ ConvertToJson = () => {
     for (var j = 0; j < tabl.rows[i].cells.length; j++) {
       row[head[j]] = tabl.rows[i].cells[j].innerHTML;
     }
-    console.log(row);
+    // console.log(row);
     rows.push(row);
   }
   exptable = JSON.stringify(rows);
-  console.log(exptable);
+  // console.log(exptable);
 };
 
 downloadCSV = (csv, filename) => {
@@ -35,9 +32,9 @@ downloadCSV = (csv, filename) => {
   downloadLink = document.createElement("a");
   downloadLink.download = filename;
   downloadLink.href = window.URL.createObjectURL(csvfile);
+  console.log(downloadLink);
   downloadLink.style.display = "none";
-  //   document.appendChild(downloadLink.href);
-
+    // document.appendChild(downloadLink.href);
   downloadLink.click();
 };
 
@@ -56,6 +53,6 @@ ConvertTocsv = (filename) => {
     csv.push(row.join(","));
   }
 
-  console.log(csv);
+  // console.log(csv);
   downloadCSV(csv.join("\n"), filename);
 };
